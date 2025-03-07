@@ -1,7 +1,11 @@
 from ..models import Product
 
+
+tempList = [{'name': 'Product1'}, {'name': 'Product2'}]
+
+
 def get_all_products():
-    return Product.objects.all()
+    return tempList
 
 def get_product_by_id(product_id: str):
     return Product.objects.get(id = product_id)
